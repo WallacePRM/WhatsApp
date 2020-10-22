@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Minha Página</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    </head>
+    <body>        
+        <div class="app">
+            <div class="attachments">
+
+            </div>
+
+            <div class="header">
+                <div class="header-left">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                    <img class="contact-photo" src="imgs/contact-photo.png" alt="Foto Contato">
+                    <div class="contact-data">
+                        <span class="contact-name">Renger Negu</span>
+                        <span class="contact-status">online</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="btn-icon"><i class="fa fa-phone" aria-hidden="true"></i></button>
+                    <button onclick="toggleAttachments()" class="btn-icon"><i class="fa fa-paperclip" aria-hidden="true"></i></button>
+                    <button class="btn-icon"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="messages">
+                    <div class="message-wraper center">
+                        <div class="message-date">
+                            <span>Today</span>
+                        </div>
+                    </div>
+                    <div class="message-wraper center">
+                        <div class="message-system">
+                            <span><i class="fa fa-lock" aria-hidden="true"></i> Messages you send to this chat and calls are now secured with to end-to-end encryption. Tap for more info.</span>
+                        </div>
+                    </div>                   
+                </div>
+                </div>
+                <div class="actions">
+                    <div class="message-field">
+                        <button class="btn-icon"><i class="fa fa-smile-o" aria-hidden="true"></i></button>
+                        <input onkeyup="checkEnter(event)" name="fieldMessage" type="text" placeholder="Type a message">
+                        <button class="btn-icon"><i class="fa fa-camera" aria-hidden="true"></i></button>
+                    </div>
+                    <button onclick="sendMessage()" class="btn-circle"><i class="fa fa-microphone" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

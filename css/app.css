@@ -1,0 +1,173 @@
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.app {
+    background-image: url(../imgs/background.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.attachments { 
+    opacity: 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.116);
+    transition: opacity 0.2s ease-in;
+}
+
+.attachments.show {
+    opacity: 1;
+}
+
+.app .header {
+    display: flex;
+    background-color: rgb(7, 94, 85);
+    color: white;
+    padding: 10px 8px;
+    justify-content: space-between; 
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.contact-photo {
+    height: 40px;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+
+.contact-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-name {
+    margin-bottom: 3px;
+}
+
+.contact-status {
+    font-size: 0.9rem;
+    color: #fff5c4cb;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.btn-icon {
+    background-color: transparent;
+    border: none;
+    color: currentColor;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.app .content {
+    flex: 1;
+}
+
+.message-wraper {
+    padding: 5px 20px;
+}
+
+.message-date,
+.message-system,
+.message-my,
+.message-contact {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
+}
+ 
+.message-date {
+    background-color: #d6eaf5;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.message-system {
+    background-color: #fff5c4;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+.message-my {
+    background-color: #e2ffc8;
+    color: black;
+
+}
+
+.message-contact {
+    background-color: white;
+}
+
+.message-time {
+    font-size: 0.7rem;
+    color: #888;
+    margin-left: 2px;
+}
+
+.message-view {
+    color: #888;
+    font-size: 0.7rem !important; 
+}
+
+.app .actions {
+    display: flex;
+    padding: 10px;
+}
+
+.message-field {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    border-radius: 5px;
+    
+    color: #888;
+    margin-right: 5px;
+}
+
+.message-field input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.message-field input::placeholder {
+    color: #ccc;
+} 
+
+.btn-circle {
+    border: none;
+    background-color: #00887a;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px; 
+    font-size: 1rem;
+    color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
+}
+
+
+
+
